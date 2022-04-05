@@ -1,0 +1,10 @@
+// две суммы, задача с leetcode
+
+let twoSum = function(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        let num = target - nums[i];
+        if (nums.includes(num, i + 1)) {
+            return [i, nums.indexOf(num, i + 1)];
+        }
+    }
+};
